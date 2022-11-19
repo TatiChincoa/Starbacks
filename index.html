@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    < <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,900;1,300&display=swap"
+            rel="stylesheet">
+        <title>Starbucks</title>
+
+</head>
+
+<body>
+    <div class="circulo"></div>
+    <img src="./Imagens/logo.png" class="logo">
+    <div class="conteudo">
+        <div class="caixa-texto" >
+            <h2> It's not just coffe <br> it's <span> Starbucks </span></h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quas, saepe fugit velit, odit sequi,
+                hic
+                exercitationem eligendi corrupti pariatur animi expedita soluta fuga sunt voluptatibus numquam sapiente
+                consectetur distinctio. <br>
+                <br>
+                <button>deixe seu like</button>
+
+        </div>
+
+        <div class="caixa-imagem">
+
+      
+            <img src="./Imagens/img1.png" class="Starbucks">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="./Imagens/thumb1.png" class="botao-menu" onclick="trocaImagem ('./Imagens/img1.png');trocaCor('#017143') ">
+        <img src="./Imagens/thumb2.png" class="botao-menu" onclick="trocaImagem ('./Imagens/img2.png');trocaCor('#eb7495') ">
+        <img src="./Imagens/thumb3.png" class="botao-menu" onclick="trocaImagem ('./Imagens/img3.png');trocaCor('#d752b1')">
+    </div>
+
+
+    
+</body>
+
+<script>
+let imagem = document.querySelector (".Starbucks")
+let circulo = document.querySelector(".circulo")
+
+function trocaImagem (endereco) {
+ imagem.src = endereco
+
+}
+
+function trocaCor (cor) {
+   circulo.style.background = cor
+}
+
+
+</script>
+
+</html>
